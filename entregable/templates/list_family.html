@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hola desde template familiares</h1>
+    {% for family in family %}
+
+        <p>El nombre es :{{family.name}}</p>
+        <p>La edad es : {{family.age}}</p>
+        {% if family.study  %}
+                <p>actualmente estudia</p>
+        {% else %}
+                <p>actualmente no estudia</p>
+        {% endif %}
+        
+
+    {% endfor %}
+</body>
+</html>
